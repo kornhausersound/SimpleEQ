@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="M9mKbn" name="SimpleEQ" projectType="audioplug" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" companyName="Kornhauser Sound"
+              companyWebsite="kornhausersound.com" cppLanguageStandard="17">
   <MAINGROUP id="OjexIm" name="SimpleEQ">
     <GROUP id="{EA9B56D9-7512-0298-6938-E86F054F3DDD}" name="Source">
       <FILE id="B1TLlg" name="PluginProcessor.cpp" compile="1" resource="0"
