@@ -101,19 +101,15 @@ private:
     template<typename ChainType, typename CoefficientType>
     void updateCutFilter(ChainType& leftLowCut,
                          const CoefficientType& cutCoefficients,
-//                         const ChainSettings& chainSettings)
                          const Slope& lowCutSlope)
     {
-//        auto cutCoefficients = juce::dsp::FilterDesign<float>::designIIRHighpassHighOrderButterworthMethod(chainSettings.lowCutFreq, getSampleRate(), 2 * (chainSettings.lowCutFreq + 1));
-//
-//        auto& leftLowCut = leftChain.get<ChainPositions::LowCut>();
-        
+
         leftLowCut.template setBypassed<0>(true);
         leftLowCut.template setBypassed<1>(true);
         leftLowCut.template setBypassed<2>(true);
         leftLowCut.template setBypassed<3>(true);
         
-//        switch ( chainSettings.lowCutSlope )
+
         switch( lowCutSlope )
         {
                 
